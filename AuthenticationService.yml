@@ -16,3 +16,10 @@ management:
         - '*'
 server:
   port: 8081
+
+auth-service:
+ messages:
+  userreg: User Created
+  usererr: User Creation Failed
+  loginsuccess: Login success
+  loginerr: Login failed
