@@ -3,10 +3,14 @@ spring:
     username: root
     url: jdbc:mysql://localhost:3306/ecommerce
     password: root
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-server:
-  port: 8081
-  
+  boot:
+    admin:
+      client:
+        url:
+        - http://localhost:1111/   
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
